@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blackjack</title>
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/screen.css">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/screen.css" />
   </head>
+
   <body>
-    <h1 class='hello-world'></h1>
+    <!-- Top of Page -->
+    <main>
+      <section class="top-section">
+        <h1 class="blackjack">Blackjack</h1>
+        <img src="\assets\background\black_card.jpeg" />
+
+        <section class="deck-buttons-section">
+          <button class="shuffle-deck-button button">Shuffle Deck</button>
+          <button class="deal-cards-button button">Deal Cards</button>
+        </section>
+
+        <section class="hit-stand-section">
+          <button class="hit-button button">Hit</button>
+          <button class="stand-button button">Stand</button>
+        </section>
+      </section>
+
+      <!-- Player Area -->
+      <section class="all-players-section">
+        <section class="player-1-section player">
+          Player 1
+          <input
+            type="text"
+            class="player-1-input "
+            placeholder="Enter Your Name"
+          />
+          <p class="player-1-cards"></p>
+          <button class="player-1-show-cards-button button">Show Cards</button>
+        </section>
+
+        <section class="player-house-section player">
+          House
+          <p class="player-house-cards"></p>
+          <button class="player-house-show-cards-button button">
+            Show Cards
+          </button>
+        </section>
+
+        <section class="player-2-section player">
+          Player 2
+          <input
+            type="text"
+            class="player-2-input "
+            placeholder="Enter Your Name"
+          />
+          <p class="player-2-cards"></p>
+          <button class="player-2-show-cards-button button">Show Cards</button>
+        </section>
+      </section>
+    </main>
+    <!-- Bottom of page -->
+    <footer>
+      <p class="footer-p">
+        copyright © Grandmaison: 31yr Before Singularity. All information is
+        serial
+      </p>
+    </footer>
+
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>

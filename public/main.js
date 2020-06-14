@@ -2,7 +2,10 @@ const deck = [];
 let userHandOne = [];
 let userHandTwo = [];
 let houseHand = [];
-// let allHands = [userHandOne, userHandTwo, houseHand];
+
+let handOneTotal = 0;
+let handTwoTotal = 0;
+let houseTotal = 0;
 
 const createDeck = () => {
   const suits = ["hearts", "clubs", "spades", "diamonds"];
@@ -67,7 +70,17 @@ const dealCards = () => {
   console.log(houseHand);
 };
 
-document //select deal cards button and listen for click, then fire 3 functions
+// const hitMe = () => {
+
+// };
+
+const showCardsPlayerOne = () => {};
+document // if show Cards is clicked then display hand=> p tag
+  .querySelector("player-1-show-cards-button").addEventListener;
+document // if hit is clicked, hit me with a single card.
+  .querySelector(".hit-button")
+  .addEventListener("click", hitMe);
+document //deal cards
   .querySelector(".deal-cards-button")
   .addEventListener("click", dealCards);
 document //if shuffle is clicked then perform shuffle function
